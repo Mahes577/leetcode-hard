@@ -1,0 +1,27 @@
+#include <iostream>
+#include<vector>
+using namespace std;
+
+int main()
+{
+    long long n;
+    cin>>n;
+    while(n--){
+    long long sum=0;
+    long long n1;
+    cin>>n1;
+     if(n1%2050==0){
+        long long h=n1/2050;
+        while(h>0){
+            long long  d=h%10;
+            sum=sum+d;
+            h=h/10;
+        }
+        cout<<sum<<endl;
+    }
+    else {
+        cout<<-1<<endl;
+    }
+    }
+    return 0;
+}
