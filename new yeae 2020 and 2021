@@ -1,0 +1,21 @@
+#include <bits/stdc++.h>
+using namespace std;
+ 
+ 
+int main()
+{
+    long long t,n,i,b,a;
+    cin >> t;
+    for(i=1;i<=t;i++)
+    {
+        cin >> n;
+        b=n/2020;
+        a=n%2020;
+        if(a<=b)
+            cout << "YES" << endl;
+        else
+            cout << "NO" << endl;
+    }
+ 
+    return 0;
+}
