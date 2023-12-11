@@ -1,0 +1,81 @@
+#include<bits/stdc++.h>
+#define ll long long
+#define _ ios_base::sync_with_stdio(false); cin.tie(nullptr);
+using namespace std;
+#define INF INT32_MAX;
+// vector<int>v;
+ 
+ 
+ 
+void solve(){
+	int n;
+	cin>>n;
+	std::vector<int> v(n);
+	for (int i = 0; i < n; ++i)
+	{cin>>v[i];
+		/* code */
+	}
+	int cnt=0;
+	for (int i = 0; i < n; ++i)
+	{int s=0,p=1;
+		for (int j = 0; j < n; ++j)
+	{   
+	
+	s=s+v[j];
+	p=p*v[j];
+ 
+ 
+		
+	}
+ 
+	if(s>=0&&p==1){
+		cout<<cnt<<endl;
+		return;
+	}
+	if(v[i]==-1){
+		cnt++;
+		v[i]=1;
+	}
+		// cout<<s<<p<<" ";
+		
+	}
+			cout<<cnt<<endl;
+  
+}
+signed main(){
+#ifndef ONLINE_JUDGE
+	freopen("input.txt","r",stdin);
+	freopen("output.txt","w",stdout);
+#endif	
+	    ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
+ 
+	clock_t z=clock();
+	int t;
+	cin>>t;
+	while(t--)solve();
+ 
+ 
+ 
+ 
+	cerr<<"Run Time :"<<((double)(clock()-z)/CLOCKS_PER_SEC);
+ 
+ 
+		
+	
+ 
+		
+    
+ 
+ 
+ 
+		
+	
+ 
+		
+	
+ 
+		
+ 
+	}
+
+ 
