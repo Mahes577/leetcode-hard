@@ -1,0 +1,27 @@
+#include <bits/stdc++.h>
+ 
+using namespace std;
+ 
+int main()
+{
+    int t;
+    cin>>t;
+    while(t--)
+    {
+        int n; 
+        string s;
+        cin>>n>>s;
+        unordered_map<char,int> map;
+        for(auto i:s)
+        {
+            map[i]++;
+        }
+        int ans=0;
+        for(auto i:map)
+            ans+=i.second;
+            
+        cout<<ans+map.size()<<endl;
+    }
+ 
+    return 0;
+}
