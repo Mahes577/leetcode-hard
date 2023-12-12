@@ -1,0 +1,27 @@
+import java.util.*
+
+fun main() {
+    val scanner = Scanner(System.in)
+    val t = if (scanner.hasNextInt()) scanner.nextInt() else 0
+
+    repeat(t) {
+        val n = if (scanner.hasNextInt()) scanner.nextInt() else 0
+        val v = IntArray(n)
+
+        for (i in 0 until n) {
+            if (scanner.hasNextInt()) {
+                v[i] = scanner.nextInt()
+            }
+        }
+
+        for (i in 0 until n - 1) {
+            if (v[i] != v[i + 1] && (i == 0 || v[i - 1] != v[i])) {
+                println(i + 1)
+                break
+            } else if (i == n - 2) {
+                println(n)
+                break
+            }
+        }
+    }
+}
