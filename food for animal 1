@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int t;
+    cin>>t;
+    while(t--){
+        long long a,b,c,d,e;
+        cin>>a>>b>>c>>d>>e;
+        if((c>=a&&c>=b)&&(d>=a&&d>=b)&&(e>=a&&e>=b)){
+            cout<<"yes"<<endl;
+        }
+        else{
+            cout<<"NO"<<endl;
+        }
+    }
+
+    return 0;
+}
